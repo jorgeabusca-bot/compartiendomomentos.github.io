@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style2.css" />
+   
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="../index.html"><img src="../imagenes/Turismo.png" alt="Logo de la Empresa" class="navbar__logo"></a>
+            <a href="#menu" class="navbar__menu">
+                <img class="navbar__icon" src="../imagenes/menu.png">
+            </a>
+            <a href="#" class="navbar__menu navbar__menu--second">
+                <img class="navbar__icon" src="../imagenes/cancelar.png">
+            </a>
+            <ul class="navbar__group" id="menu">
+                <li class="navbar__list">
+                    <a class="navbar__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="./acercaDe.html">Acerca de</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="./preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="./usuario.html">Usuarios</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="./formulario/formulario.html">Formulario</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="contactUs">
+        <div class="contactInfo">
+            <h2 class="contactInfo__title">¡Viajemos Juntos!</h2>
+            <p class="contactInfo__text">Si deseas consultar mayor información sobre nuestros servicios o tienes alguna
+                duda al
+                respecto, no dudes
+                en contactarnos y un integrante de nuestro equipo te contactará a la brevedad.</p>
+            <div class="contactData">
+                <img class="contactData__logo" src="../imagenes/whatsapp.png" alt="Logo WhatsApp">
+                <p class="contactData__info">Contactanos via WhatsApp +54 11-1111-1111</p>
+            </div>
+            <div class="contactData">
+                <img class="contactData__logo" src="../imagenes/correo-electronico.png" alt="Logo Sobre de Correo">
+                <p class="contactData__info">contacto@turismo.com.ar</p>
+            </div>
+            <div class="contactData">
+                <img class="contactData__logo" src="../imagenes/mapas-y-banderas.png" alt="Logo Puntero Mapa">
+                <p class="contactData__info">Av. Jesus de Monte 3954 - CABA</p>
+            </div>
+        </div>
+        <div class="formContainer">
+            <h2 class="formContainer__title">Contactanos</h2>
+            <form class="formContainer__form" action="#" method="POST">
+                <div class="formContainer__group">
+                    <label class="formContainer__label" for="name">Nombre:</label>
+                    <input class="formContainer__input" type="text" id="name" name="name" required>
+                </div>
+                <div class="formContainer__group">
+                    <label class="formContainer__label" for="surname">Apellido:</label>
+                    <input class="formContainer__input" type="text" id="surname" name="surname" required>
+                </div>
+                <div class="formContainer__group">
+                    <label class="formContainer__label" for="tel">Teléfono:</label>
+                    <input class="formContainer__input" type="text" id="tel" name="tel" required>
+                </div>
+                <div class="formContainer__group">
+                    <label class="formContainer__label" for="email">Email:</label>
+                    <input class="formContainer__input" type="email" id="email" name="email" required>
+                </div>
+                <div class="formContainer__group">
+                    <label class="formContainer__label" for="message">Message:</label>
+                    <textarea class="formContainer__textArea" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="formContainer__buttonArea">
+                    <button class="formContainer__button" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="socialMedia">
+            <p class="socialMedia__text">Me puedes encontrar en:</p>
+            <a class="socialMedia__link" href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                <img class="socialMedia__img" src="../imagenes/facebook.png" alt="Logo Facebook">
+            </a>
+            <a class="socialMedia__link" href="https://www.instagram.com/" target="_blank">
+                <img class="socialMedia__img" src="../imagenes/instagram.png" alt="Logo Facebook">
+            </a>
+            <a class="socialMedia__link" href="https://github.com" target="_blank">
+                <img class="socialMedia__img" src="../imagenes/github.png" alt="Logo Github">
+            </a>
+            <a class="socialMedia__link" href="https://www.linkedin.com" target="_blank">
+                <img class="socialMedia__img" src="../imagenes/linkedin.png" alt="Logo Linkekin">
+            </a>
+        </div>
+        <p class="footer__text">
+            © 2024 Todos los derechos reservados | Sitio desarrollado por: Equipo de
+            desarrollo
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,825 @@
+/* Basic styling for the navbar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #261c71;
+    font-family: "Roboto", sans-serif;
+}
+
+/* header clases ------------------------------------- */
+
+.header {
+    background-color: #f25f4c;
+}
+
+.navbar {
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+}
+
+.navbar__logo {
+    height: 90px;
+    width: 90px;
+    margin: 5px 10px;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+.navbar__group {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar__list {
+    list-style: none;
+}
+
+.navbar__link {
+    float: left;
+    display: block;
+    color: #fffffe;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar__link:hover {
+    background-color: #e53170;
+    border-radius: 100px;
+    transition: 1s;
+}
+
+/* footer clases ------------------------------------- */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #f25f4c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.socialMedia__text {
+    margin: 10px 0 15px 0;
+}
+
+.socialMedia__link {
+    text-decoration: none;
+}
+
+.socialMedia__img {
+    height: 45px;
+    width: 45px;
+    filter: invert(30%) sepia(85%) saturate(1570%) hue-rotate(313deg) brightness(90%) contrast(99%);
+}
+
+.socialMedia__img:hover {
+    filter: invert(90%) sepia(1%) saturate(3084%) hue-rotate(352deg) brightness(110%) contrast(105%);
+}
+
+/*Acerca de clases ------------------------------------- */
+
+.containerAboutUs {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    color: #a7a9be;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.section--reverse {
+    flex-direction: row-reverse;
+}
+
+.section__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.section__title {
+    color: #fffffe;
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+}
+
+.section__info {
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.section__img {
+    height: 40%;
+    width: 40%;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+}
+
+/* Contacto clases ------------------------------------- */
+
+.contactUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contactInfo {
+    color: #fffffe;
+    width: 500px;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.contactInfo__title {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.contactInfo__text {
+    font-size: 1.5rem;
+    padding: 0 50px;
+}
+
+.contactData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.contactData__logo {
+    height: 24px;
+    width: 24px;
+    filter: invert(30%) sepia(85%) saturate(1570%) hue-rotate(313deg) brightness(90%) contrast(99%);
+}
+
+.contactData__info {
+    font-size: 1.2rem;
+}
+
+.formContainer {
+    width: 500px;
+    margin: 100px 0;
+    padding: 0 35px 35px 35px;
+    background-color: #e53170;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer__title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+.formContainer__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.formContainer__label {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.formContainer__input {
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formContainer__textArea {
+    resize: vertical;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formContainer__buttonArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer__button[type="submit"] {
+    background-color: #ff8906;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.formContainer__button[type="submit"]:hover {
+    background-color: #ff5906;
+    transition: 1s;
+}
+/* ---------------------index clase------------------------------*/
+
+
+.contenido_principal{
+    width: 1024px;
+    height: 1600px;
+    background-color: rgb(0, 0, 0); 
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    color: rgb(255, 251, 251);
+}
+
+main table {
+    display: inline-block;
+    color: rgb(255, 251, 251);
+}
+
+.cuadro img{
+    width: 960px;
+    height: 300px;
+}
+main section{
+    width: auto;
+    height: auto;
+    padding: 10px;
+
+}
+/* Galeria de imagenes */
+
+div.gallery {
+    margin: 5px;
+    border: 5px solid #ccc;
+    float: left;
+    width: 180px;
+}
+  
+  div.gallery:hover {
+    border: 5px solid #06fa0a;
+}
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+.gallery .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .gallery .btn:hover {
+    background-color: rgb(144, 30, 30);
+    color: white;
+}
+/*----------------------------------------------------------------------*/
+/*                                galeria aside                         */                      
+/*----------------------------------------------------------------------*/
+aside{
+    width: 300px;
+    height: 1600px;
+    float: right;
+    background-color: #030114;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+aside h1 {
+    color: rgb(9, 231, 243);
+    margin-bottom: 2;
+    font-size: xx-large;
+}
+
+aside section a img{     
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background-color: #030114;   
+    font-size: 15px;    
+    padding: 50px 15px;
+}
+aside section article  {
+    width: 960;
+    height: 180;
+}
+
+
+footer{
+width: 1350px;
+height: 180px;
+background-color: rgb(73, 3, 3);
+margin-top: 10px;
+color: white;
+}
+
+/*---------------------fin de index clase ------------------------*/
+
+
+/*formulario-----------------------------------*/
+
+.workWithUs{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.workWithUs__question {
+    text-align: center;
+}
+
+.workWithUs__title {
+    text-align: center;
+}
+
+
+.workForm__form {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:#0f0e17;
+    color: #ccc;
+}
+
+.workForm__infoApplicant {
+    margin-bottom: 15px;
+}
+
+.workForm__legend {
+    font-weight: bold;
+    text-align: center;
+}
+
+.workForm__label {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 8px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.workForm__input, .workForm__text{
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.workForm__selectLabel {
+    display: block;
+    margin-bottom: 5px;
+}
+.workForm__selectInput{
+    margin-right: 5px;
+}
+
+.workForm__selectTime, .workForm__selectImg  {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.workForm__button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+.workForm__button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para campos requeridos */
+/* Cambia el borde a rojo para resaltar campos requeridos */
+input:required,
+select:required {
+    border: 1px solid #ff6347; 
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+    color: #ff6347;
+    font-size: 14px;
+    margin-top: 5px;
+}
+/* fin de formularios -------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* header clases 768pc a 1023px ------------------------------------- */
+
+    .navbar__link {
+        font-size: 1.2rem;
+        padding: 14px 10px;
+    }
+
+    /* Acerca De clases 768px a 1023px ------------------------------------- */
+
+    .section {
+        column-gap: 10px;
+        padding: 20px 20px;
+    }
+
+    .section__texts {
+        width: 50%;
+    }
+
+    .section__title {
+        font-size: 2.5rem;
+    }
+
+    .section__info {
+        font-size: 1.5rem
+    }
+
+    .section__img {
+        height: 50%;
+        width: 50%;
+    }
+
+    /* Contacto clases 768px a 1023px ------------------------------------- */
+    .contactUs {
+        padding: 0 10px;
+        column-gap: 20px;
+    }
+    
+    .contactInfo {
+        width: 50%;
+        margin: 50px 0;
+    }
+
+    .contactInfo__title {
+        font-size: 1.8rem;
+    }
+
+    .contactInfo__text {
+        font-size: 1.2rem;
+    }
+
+    .contactData__info {
+        font-size: 1.1rem;
+    }
+
+    .formContainer {
+        width: 50%;
+        margin: 50px 0;
+        padding: 0 27px 27px 27px;
+    }
+
+    .formContainer__title {
+        font-size: 1.9rem;
+    }
+
+    .formContainer__label {
+        margin-bottom: 1px;
+        font-size: 1rem;
+    }
+
+    .formContainer__button[type="submit"] {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* header clases 320px a 767px ------------------------------------- */
+    .header {
+        --img1: scale(1);
+        --img2: scale(0);
+    }
+
+    .header:has(.navbar__group:target) {
+        --img1: scale(0);
+        --img2: scale(1);
+        --clip: inset(0 0 0 0);
+    }
+
+    .navbar {
+        width: 90%;
+        height: 90px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-template-areas: "title img";
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .navbar__logo {
+        grid-area: title;
+        height: 70px;
+        width: 70px;
+        margin: 5px 5px;
+    }
+
+    .navbar__menu {
+        display: inline;
+        grid-area: img;
+        position: relative;
+        z-index: 10;
+        transform: var(--img1);
+        border: solid #fff 1px;
+        border-radius: 5px;
+        padding: 3px;
+    }
+
+    .navbar__menu--second {
+        transform: var(--img2);
+    }
+
+    .navbar__icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        filter: invert(100%) sepia(35%) saturate(784%) hue-rotate(339deg) brightness(112%) contrast(110%);
+    }
+
+    .navbar__group {
+        position: absolute;
+        background-color: #f25f4c;
+        width: 75%;
+        max-width: 280px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 1em;
+        display: grid;
+        align-content: center;
+        gap: 1rem;
+        overflow-y: auto;
+        border-left: 5px solid #e53170;
+
+        clip-path: var(--clip, inset(0 0 100% 100%));
+        transition: clip-path .5s;
+    }
+
+    .navbar__link {
+        font-size: 1rem;
+    }
+
+/*-------------------index ipon----------------------*/
+
+.contenido_principal{
+    width: 750px;
+    height: 1800px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+.cuadro img{
+    width: 650px;
+    height: 300px;
+}
+
+aside{
+    width: 670px;
+    height: 2300px;
+    float: right;
+    background-color: #030114;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+}
+
+
+aside section a img{
+    image-orientation: from-image;
+    border: 0;
+    height: auto;
+    width: auto;
+    
+}
+
+
+    /* footer clases 320px a 767px ------------------------------------- */
+    
+    .footer {
+        font-size: 0.9rem;
+        row-gap: 10px;
+    }
+
+    .socialMedia__text {
+        margin: 5px 0 10px 0;
+    }
+
+    .socialMedia__img {
+        height: 32px;
+        width: 32px;
+    }
+
+    /* Contacto clases 320px a 767px ------------------------------------- */
+
+    .contactUs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactInfo {
+        width: 100%;
+        margin: 30px 0;
+        row-gap: 10px;
+    }
+
+    .contactInfo__title {
+        font-size: 1.8rem;
+    }
+
+    .contactInfo__text {
+        font-size: 1.2rem;
+    }
+
+    .contactData {
+        margin-top: 20px;
+        column-gap: 5px;
+    }
+    
+    .contactData__logo {
+        height: 20px;
+        width: 20px;
+    }
+    
+    .contactData__info {
+        font-size: 0.9rem;
+    }
+
+    .formContainer {
+        width: 90%;
+        margin: 30px 0;
+        padding: 0 20px 20px 20px;
+    }
+
+    .formContainer__title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .formContainer__label {
+        margin-bottom: 2px;
+        font-size: 0.9rem;
+    }
+
+    .formContainer__button[type="submit"] {
+        font-size: 1rem;
+    }
+
+    /* Acerca De clases 320px a 767px ------------------------------------- */
+
+    .section {
+        flex-direction: column;
+        padding: 30px 5px;
+        row-gap: 30px;
+    }
+
+    .section__texts {
+        width: 90%;
+    }
+
+    .section__title {
+        font-size: 2rem;
+    }
+
+    .section__info {
+        font-size: 1rem
+    }
+
+    .section__img {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+/* Usuarios Clases ------------------------------------- */
+
+.inicio_sesion{
+    /*margin: auto;*/
+    padding: 5px;
+    background-color: #e53170;
+    position: relative;
+    width: 100%;
+    left: 30%;
+    max-width: 400px;
+    margin-block: 10%;
+    text-align: center;
+    /*margin-top: 100px;*/
+    line-height: 2;
+    border-radius: 10px;
+}
+
+
+
+/*preguntas frecuentes -------------------------------------*/
+
+.Pregunta1{
+    margin: auto;
+    padding: 50px;
+    background-color: #ffffff;
+    margin: 40%;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    line-height: 2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Pregunta2 {
+    margin: auto;
+    padding: 50px;
+    background-color: #ffffff;
+    margin: 40%;
+    text-align: left;
+    margin-top: 50px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    line-height: 2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Pregunta1:hover {
+    transform: scale(1.1);
+}
+
+.Pregunta2:hover {
+    transform: scale(1.1);
+}
+

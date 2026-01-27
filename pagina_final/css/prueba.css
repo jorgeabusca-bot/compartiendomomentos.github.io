@@ -1,0 +1,346 @@
+/*------------------COMO NO FUNCIONA EL RESPONSIVE LO COMENTO ---------------------------------------------------------*/
+
+/*---------------------------------- Aca comienza el responsive Tablet ------------------------------------------------*/
+
+
+
+/*
+@media all and (min-width:600px) and (max-width: 1023px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: -webkit-radial-gradient(top, #1926d8), #4f59e9;
+    }
+    
+}
+
+.navbar__logo {
+    height: 70px;
+    width: 70px;
+    margin: 3px 8px;
+}
+
+.navbar__menu {
+    display: flex;
+}
+
+.navbar__group {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar__list {
+    list-style: none;
+}
+
+.navbar__link {
+    float: left;
+    display: block;
+    color: #fffffe;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar__link:hover {
+    background-color: #e53170;
+    border-radius: 100px;
+    transition: 1s;
+}
+
+
+.contenido_principal{
+    width: 700px;
+    height: 1300px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 11px;
+    display: inline-block;
+    color: rgb(255, 251, 251);
+}
+
+.cuadro img{
+    width: 550px;
+    height: 250px;
+
+}*/
+/*footer*/
+/* footer clases ------------------------------------- */
+/*
+.footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    background-color: #f25f4c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.socialMedia__text {
+    margin: 10px 0 15px 0;
+}
+*/
+
+/* Formulario de usuario */
+
+/*
+.inicio_sesion{
+    margin: auto;
+    padding: 30px;
+    background-color: #e53170;
+    margin: 30%;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 2;
+    border-radius: 8px;
+}
+
+
+ main div span{
+    padding: 8px;
+ }
+
+ main div p{
+    text-align: left;
+ }
+
+ .formulario{
+    padding: 5px;
+    width: 100%;
+ }
+*/
+
+/* Galeria de imagenes */
+
+/*
+
+div.gallery {
+    margin: 5px;
+    border: 5px solid #ccc;
+    float: left;
+    width: 150px;
+}
+  
+  div.gallery:hover {
+    border: 5px solid #06fa0a;
+}
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+.gallery .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .gallery .btn:hover {
+    background-color: black;
+    color: white;
+}*/
+
+
+/*----------------------------------------------------------------------*/
+/*                                galeria aside                         */                      
+/*----------------------------------------------------------------------*/
+
+/*
+aside{
+    width: 250px;
+    height: 1300px;
+    float: right;
+}
+
+aside section a img{
+    display: block;
+    border: 0;
+    width: 40px;
+    height: auto;
+    width: 100%;
+    background-color: #030114;
+    padding: 60%;
+    font-size: 6px;
+    text-decoration: none;
+    padding: 15px 6px;
+    display: inline-block;
+    color: rgb(255, 251, 251);
+}
+footer{
+width: 700px;
+height: 140px;
+background-color: rgb(73, 3, 3);
+margin-top: 10px;
+color: white;
+}
+*/
+/*---------------------------------- Aca comienza el responsive Iphone ------------------------------------------------*/
+
+/*
+@media all and (min-width:300px) and (max-width: 979px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: -webkit-radial-gradient(top, #1926d8), #4f59e9;
+    }
+    
+}
+.navbar__logo {
+    height: 50px;
+    width: 50px;
+    margin: 3px 8px;
+}
+
+
+
+.contenido_principal{
+    width: 350px;
+    height: 1100px;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px 11px;
+    display: inline-block;
+    color: rgb(255, 251, 251);
+}
+
+.cuadro img{
+    width: 300px;
+    height: 120px;
+
+}
+*/
+
+/*footer*/
+/* footer clases ------------------------------------- */
+
+/*
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    background-color: #f25f4c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.socialMedia__text {
+    margin: 10px 0 15px 0;
+}
+*/
+
+/* Formulario de usuario */
+
+/*
+.inicio_sesion{
+    margin: auto;
+    padding: 10px;
+    background-color: #e53170;
+    margin: 10%;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 2;
+    border-radius: 8px;
+}
+*/
+
+/* Galeria de imagenes */
+
+/*
+div.gallery {
+    margin: 5px;
+    border: 5px solid #ccc;
+    float: left;
+    width: 80px;
+}
+
+  
+  
+.gallery .btn {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 12px;
+    padding: 12px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .gallery .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+*/
+
+
+/*----------------------------------------------------------------------*/
+/*                                galeria aside                         */                      
+/*----------------------------------------------------------------------*/
+
+/*
+aside{
+    width: 130px;
+    height: 1100px;
+    float: right;
+}
+
+aside section a img{
+    display: block;
+    border: 0;
+    width: 40px;
+    height: auto;
+    width: 100%;
+    background-color: #030114;
+    padding: 60%;
+    font-size: 6px;
+    text-decoration: none;
+    padding: 15px 6px;
+    display: inline-block;
+    color: rgb(255, 251, 251);
+}
+footer{
+width: 700px;
+height: 140px;
+background-color: rgb(73, 3, 3);
+margin-top: 10px;
+color: white;
+}
+*/
+/*--------------------------------- ACA TERMINA EL COMENTARIO DE RESPONSIVE -------------------------------*/
