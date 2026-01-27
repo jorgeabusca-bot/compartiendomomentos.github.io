@@ -1,0 +1,147 @@
+body{
+    color: #ccc;
+background-color:#0f0e17
+}
+
+/* Estilos generales */
+
+/* #MiFormulario {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+.workForm__form {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .containerAboutUs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+.workWithUs{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Estilos del formulario */
+
+
+/* legend {
+    font-weight: bold;
+} */
+.workForm__legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.workForm__label, .workForm__input, .workForm__text{
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 8px;
+    
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* .CasillaDeSeleccion {
+    margin-bottom: 20px;
+} */
+
+/*------------------------------------*/
+
+
+/* 
+div {
+    margin-bottom: 15px;
+    
+} */
+.workForm__infoApplicant {
+    margin-bottom: 15px;
+}
+
+.workForm__selectLabel {
+    display: block;
+    margin-bottom: 5px;
+}
+.workForm__selectInput{
+    margin-right: 5px;
+}
+
+.seleccionarOpcion, .SeleccionarImagen  {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.workForm__selectTime, .workForm__selectImg  {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* #enviar{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+#enviar:hover {
+    background-color: #45a049;
+} */
+
+.workForm__button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+.workForm__button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para campos requeridos */
+/* Cambia el borde a rojo para resaltar campos requeridos */
+input:required,
+select:required {
+    border: 1px solid #ff6347; 
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+    color: #ff6347;
+    font-size: 14px;
+    margin-top: 5px;
+}
+

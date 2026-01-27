@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style2.css">
+    <link rel="icon" type="image/x-icon" href="../../imagenes/favicon.ico">
+
+    <title>Formulario</title>
+</head>
+
+<body bgcolor="#00FF00" text="#000000" link="#0066CC">
+    <!--Contenedor principal (el comentario se puede hacer marcando todo y apreto Ctrl+k+c)-->
+    <header class="header">
+        <div class="navbar">
+            <a href="../../index.html"><img src="../../imagenes/Turismo.png" alt="Logo de la Empresa"
+                    class="navbar__logo"></a>
+            <a href="#menu" class="navbar__menu">
+                <img class="navbar__icon" src="../../imagenes/menu.png">
+            </a>
+            <a href="#" class="navbar__menu navbar__menu--second">
+                <img class="navbar__icon" src="../../imagenes/cancelar.png">
+            </a>
+            <ul class="navbar__group" id="menu">
+                <li class="navbar__list">
+                    <a class="navbar__link" href="../../index.html">Inicio</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="../acercaDe.html">Acerca de</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="../contacto.html">Contacto</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="../preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="../usuario.html">Usuarios</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="./formulario.html">Formulario</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="workWithUs">
+            <h2 class="workWithUs__question">¡¿ Buscaba empleo en "Compartiendo momentos" ?!</h2>
+            <h1 class="workWithUs__title">Formulario de contacto</h1>
+        <form class="workForm__form" id="miFormulario" action="registro_ingreso" method="">
+            <fieldset class="workForm__infoApplicant">
+                    <legend class="workForm__legend"><b>Informacion Personal - Complete el formulario</b></legend>
+                <label class="workForm__label" for="Nombre">Nombre
+                    <input class="workForm__input" type="text" name="Nombre" id="nombre" size="10" maxlength="15"
+                        required>
+                </label>
+                <label class="workForm__label" for="Apellido">Apellido
+                    <input class="workForm__input" type="text" name="Apellido" id="apellido" size="10" maxlength="15"
+                        required>
+                </label>
+                <label class="workForm__label" for="dni">DNI
+                    <input class="workForm__input" type="text" name="dni" id="dni" min="1000000" maxlength="10"
+                        required>
+                </label>
+                <label class="workForm__label" for="correo">Correo
+                    <input class="workForm__input" type="email" name="correo" id="correo" required>
+                </label>
+                <label class="workForm__label" for="fechNac">Fecha de Nacimiento
+                    <input class="workForm__input" type="date" name="fecNac" id="fecNac">
+                </label>
+                <label class="workForm__label" for="imagen">Colocar CV en formato JPG.
+                    <input class="workForm__selectImg" type="file" id="imagen" name="imagen" accept="image/*" required>
+                </label>
+
+                <div class="workForm__selectContainer">
+                    <label class="workForm__selectLabel">
+                        <input class="workForm__selectInput" type="radio" name="opcion" value="opcion1"> Vacante
+                        Presencial
+                    </label>
+                    <label class="workForm__selectLabel">
+                        <input class="workForm__selectInput" type="radio" name="opcion" value="opcion2"> Vacante
+                        Distancia
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="workForm__infoApplicant">
+                    <legend class="workForm__legend" for="comentarios">
+                        Escriba su consulta:
+                    </legend>
+                <textarea class="workForm__text" name="comentarios" id="comentarios" rows="10" cols="30"
+                    placeholder="Escriba aquí su consulta/comentario"></textarea>
+                <div class="workForm__timeContainer">
+                    <label class="workForm__label">Horario libre para entrevistas:</label>
+                    <select class="workForm__selectTime" name="seleccionarOpcion" required>
+                        <option value="">Seleccionar...</option>
+                        <option value="opcionA">08Hs - 12Hs</option required>
+                        <option value="opcionB">12Hs - 16Hs</option required>
+                        <option value="opcionC">16Hs - 20Hs</option required>
+                    </select>
+                </div>
+                <button class="workForm__button" id="enviar" type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="socialMedia">
+            <p class="socialMedia__text">Me puedes encontrar en:</p>
+            <a class="socialMedia__link" href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                <img class="socialMedia__img" src="../../imagenes/facebook.png" alt="Logo Facebook">
+            </a>
+            <a class="socialMedia__link" href="https://www.instagram.com/" target="_blank">
+                <img class="socialMedia__img" src="../../imagenes/instagram.png" alt="Logo Facebook">
+            </a>
+            <a class="socialMedia__link" href="https://github.com" target="_blank">
+                <img class="socialMedia__img" src="../../imagenes/github.png" alt="Logo Github">
+            </a>
+            <a class="socialMedia__link" href="https://www.linkedin.com" target="_blank">
+                <img class="socialMedia__img" src="../../imagenes/linkedin.png" alt="Logo Linkekin">
+            </a>
+        </div>
+        <p class="footer__text">
+            © 2024 Todos los derechos reservados | Sitio desarrollado por: Equipo de
+            desarrollo
+        </p>
+    </footer>
+
+    <script src="validacion.js"></script>
+</body>
+
+</html
