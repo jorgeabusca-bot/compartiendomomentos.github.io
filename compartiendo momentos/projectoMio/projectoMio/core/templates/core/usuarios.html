@@ -7,10 +7,53 @@
 {% block background %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
 
 {% block headers %}
-<h1>Jorge Alberto Busca</h1>
-<span class="subheading">Ingeniero Informático</span>
+<main>
+                <h2></h2>
 {% endblock%}
 
+
 {% block content %}
-<h2>Usuarios</h2>
+<mainclass="containerAboutUs">
+        <section class="section">
+            <div class="section__texts">
+                <h3 class="section__title">Compartiendo Momentos</h3>
+        <div class="cabecera">       
+                
+        <div class="inicio_sesion">
+            <h1 class="text-center">Iniciar Sesion</h1>
+            <h2 class="text-center">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div>{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            </h2>
+            <p>¿No tenes cuenta en nuestra pagina?</p>
+            <div class="formContainer__buttonArea">
+                <button class="formContainer__button" type="submit">
+                    <a href="{% url 'registro' %}">Registrarse</a>
+                </button>
+            </div>
+            <form method="post">  <!-- Agrega el formulario aquí -->
+
+                {% csrf_token %}
+
+            <label class="workForm__label" for="usuario">Nombre de Usuario
+                    <input class="workForm__input" type="text" name="usuario" id="usuario" min="1000000" maxlength="10"
+                        required>
+            </label>
+
+                
+            <label class="workForm__label" for="clave">Contraseña
+                    <input class="workForm__input" type="password" name="password" id="password" min="1000000" maxlength="10"
+                        required>
+            </label>
+            <div class="formContainer__buttonArea">
+                <button class="formContainer__button" type="submit">Enviar</button>
+            </div>
+        </form> <!-- Cierra el formulario aquí -->
+        </div>        
+        </article>
+        </section>
+    </main>
 {% endblock %}

@@ -6,26 +6,40 @@
 {% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
 
 {% block headers %}
-<h1>A Cerca De</h1>
-<span class="subheading">Biografia</span>
+<main class="containerAboutUs">
+        <section class="section">
+            <div class="section__texts">
+                <h3 class="section__title">Nuestras Experiencias</h3>
+                <h2>Los Momentos Compartidos</h2>
 {% endblock%}
 
 
 
 {% block content %}
-<div class="container">
-    <div class="row">   
-      <div class="col-lg-3 col-md-4 offset-lg-1">
-        <img class="img-fluid avatar" src="{% static 'core/img/avatar.png'%}" alt="avatar">
-      </div>
-      <div class="col-lg-7 col-md-8">
-        <h2 class="section-heading">Carlos Arroyo Díaz</h2>   
-        <p>Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit...</p>
-      </div>
-    </div>  
-  </div>
-
-  <hr>
+<main class="containerAboutUs">
+        <section class="section">
+            <div class="section__texts">
+                <h3 class="section__title">Las dos Orillas</h3>
+                <p class="section__info">
+                    Nos interiorizamos de la limpieza del riachuelo desde el año 2011 al 2024.
+                    La Empresa "Acumar" Encargada de limpiarlo, nos cuenta los periplos de su trabajo y el mantenimiento de las aguas, que hoy en dia, vuelven a ser navegables hasta el puente "Dardo Rocha".
+                    Recorrido por la "Isla Maciel", donde nos cuentan su historia (Los alumnos de la facultad de Turismo, haciendo su pasantias), tambien nos interiorizamos de los films que se desarrollaron en la zona, y por ultimo ingresamos a la casa barco (Historia de un trabajador de arreglo de botes) </p> 
+                    <p class="section__info">
+                    <b>Todo Organizado desde el Centro Cultural "El Sueñero" junto con el Ministerio de Turismo y la Municipalidad de Avellaneda.</b>
+                </p>
+            </div>
+            <img src="{% static 'core/imagenes/las_dos_orillas/IMG_20231125_112120.jpg' %}" alt="Forest" width="600" height="400">
+        </section>
+        <section class="section section--reverse">
+            <div class="section__texts">
+                <h3 class="section__title">Campanopolis</h3>
+                <p class="section__info">
+                    Esuna Villa Medieval realizada por "Horacio Campana" unn señor que alargo su vida ganandole al cancer con este proyecto realizado en Gonzalez Catan, con todos materiales de reciclados de casas antiguas y todo lo que encontraba en ellas.
+                    Hoy es un lugar de Turismo para recrear la vista con imaginacion, donde las escaleras no suben a ningun lugar, ylas puertas conducen a a la nada misma o a una pared 
+                </p>
+            </div>
+            <img src="{% static 'core/imagenes/campanopolis/DSC_0047.jpg' %}" alt="Forest" width="600" height="400">
+        </section>
+    </main>
 
 {% endblock %}

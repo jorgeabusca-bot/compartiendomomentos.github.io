@@ -1,37 +1,84 @@
 {% extends "core/base.html" %}
-{% block title %}Portafolio{% endblock %}
+{% block title %}Registrarse{% endblock %}
 
 {% load static %}
 
 {% block background %}{% static 'core/img/portfolio-bg.jpg' %}{% endblock %}
 
 {% block headers %}
-<h1>Jorge Alberto Busca</h1>
-<span class="subheading">Ingeniero Informático</span>
 {% endblock%}
 {% block content %}
 <!-- Proyecto -->
-<div class="row project">  	
-    <div class="col-lg-3 col-md-4 offset-lg-1">
-        <img class="img-fluid" src="{% static 'core/img/about-bg.jpg'%}" alt="">
+<main class="contactUs">
+    <div class="contactInfo">
+        <h1>Su Registro Seguro</h1>
+        <h2>Estamos a su disposición</h2>
+        <h2 class="contactInfo__title">¡Viajemos Juntos!</h2>
+        <p class="contactInfo__text">Su información personal no será compartida con terceros sin su consentimiento explícito.</p>
+        <p class="contactInfo__text">Implementamos medidas de seguridad avanzadas para proteger sus datos contra accesos no autorizados, alteraciones o divulgaciones.</p>
+        <p class="contactInfo__text"> Los datos recaudados se utilizarán exclusivamente para mejorar su experiencia con nuestros servicios y para mantenerlo informado sobre nuestras novedades y ofertas.</p>
+        
+        <div class="contactData">
+            <img class="contactData__logo" src="{% static 'core/imagenes/whatsapp.png' %}" alt="Logo de WhatsApp" width="600" height="400">
+            <p class="contactData__info">Contáctanos vía WhatsApp: +54 11-2291-9075</p>
+        </div>
+        
+        <div class="contactData">
+            <img class="contactData__logo" src="{% static 'core/imagenes/correo-electronico.png' %}" alt="Logo de Correo Electrónico" width="600" height="400">
+            <p class="contactData__info">Email: <a href="mailto:contacto@compartiendomomentos.ar">contacto@compartiendomomentos.ar</a></p>
+        </div>
     </div>
-  <div class="col-lg-7 col-md-8">
-        <h2 class="section-heading title">Segundo proyecto</h2>   
-    <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm....</p>
-    <p><a href="http://google.com">Más información</a></p>
-    </div>
-</div>
-<!-- Proyecto -->
-<div class="row project">  	
-    <div class="col-lg-3 col-md-4 offset-lg-1">
-        <img class="img-fluid" src="{% static 'core/img/home-bg.jpg'%}" alt="">
-    </div>
-  <div class="col-lg-7 col-md-8">
-        <h2 class="section-heading title">Primer proyecto</h2>   
-    <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm....</p>
-    <p><a href="http://google.com">Más información</a></p>
-    </div>
-</div>
-</div>
+    <div class="formContainer">
+        <h2 class="formContainer__title">Registrese</h2>
+            <form class="formContainer__form" method="POST">
+            {% csrf_token %}
 
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        <h3 style="color: red;">{{ message }}</h3>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+
+            <div class="formContainer__group">
+                <label class="formContainer__label" for="name">Nombre:</label>
+                <input class="formContainer__input" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="formContainer__group">
+                <label class="formContainer__label" for="surname">Apellido:</label>
+                <input class="formContainer__input" type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="formContainer__group">
+                <label class="formContainer__label" for="dni">DNI:</label>
+                <input class="formContainer__input" type="dni" id="dni" name="dni" required>
+            </div>
+            <div class="formContainer__group">
+                <label class="formContainer__label" for="correo">Email:</label>
+                <input class="formContainer__input" type="correo" id="correo" name="correo" required>
+            </div>
+            <div class="formContainer__group">
+                <label class="formContainer__label" for="tel">Celular:</label>
+                <input class="formContainer__input" type="tel" id="celular" name="celular" required>
+            </div>            
+            <div class="formContainer__group">
+                <label class="formContainer__label" for="usuario">Usuario:</label>
+                <input class="formContainer__input" type="usuario" id="usuario" name="usuario" required>
+            </div>
+            <div class="formContainer__group">
+                <label class="formContainer__label" for="password">Contraseña:</label>
+                <input class="formContainer__input" type="password" id="password1" name="password" required id="id_password1">
+            </div>
+            <div class="formContainer__group">
+                <label class="formContainer__label" for="password">Verificación de contraseña:</label>
+                <input class="formContainer__input" type="password" id="password2" name="verificacion" required id="verificacion">
+            </div>
+            <div class="formContainer__buttonArea">
+                <button class="formContainer__button" type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    
+<!-- Proyecto -->
 {% endblock %}

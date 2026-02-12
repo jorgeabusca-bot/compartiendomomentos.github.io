@@ -13,84 +13,110 @@
       <div class="cabecera">
         <img id="imagen_cabecera" src="{% static 'core/imagenes/encabezado.jpeg' %}" alt="Encabezado">
                 <h1 class="text-center">Compartiendo Momentos</h1>
-                <h2 class="text-center">Para acceder a nuestras ofertas tiene que <button class="formContainer__button" type="submit">
-                    <a href="{% url 'registro' %}">Registrarse</a>
-                </button>
-              </a></h2>
-
-      </div>
+                <h2 class="text-center">Bienvenido, "{{ user.nombre }} {{ user.apellido }}"</h2>
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0001.jpg' %}" alt="Forest" width="600" height="400">
-          </div >
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
+          </div>
           
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0002.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
           
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0003.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
           
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0004.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
 
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0005.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
           
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0006.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
           
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0007.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
           
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0008.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
 
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0009.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
           
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0010.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
           
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0011.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
           
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0012.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
 
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0013.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
 
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0014.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
 
           <div class="gallery">
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0015.jpg' %}" alt="Forest" width="600" height="400">
-               
+                <button class="btn">Inscribite</button>
+              </a>
+              <div class="desc">Añade una descripción de la imagen aquí.</div>
           </div>
         </div>
       </article>           
@@ -105,14 +131,14 @@
 <aside>
     <section>
         <div class="img_aside">
-            <a "{% static 'core/imagenes/salidas copadas/IMG-WA0013.jpg' %}">
+            <a target="_blank" href="{% static 'core/imagenes/salidas copadas/IMG-WA0013.jpg' %}">
                 <h1 class="text-center">Próximamente</h1>
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0013.jpg' %}" alt="Mountains" width="600" height="400">
                 <h3 class="text-center">Suscribite a partir del 15/05/2024</h3>
             </a>
         </div>
         <div class="img_aside">
-            <a "{% static 'core/imagenes/salidas copadas/IMG-WA0014.jpg' %}">
+            <a target="_blank" href="{% static 'core/imagenes/salidas copadas/IMG-WA0014.jpg' %}">
                 <h1 class="text-center">Próximamente</h1>
                 <img src="{% static 'core/imagenes/salidas copadas/IMG-WA0014.jpg' %}" alt="Mountains" width="600" height="400">
                 <h3 class="text-center">Suscribite a partir del 15/05/2024</h3>

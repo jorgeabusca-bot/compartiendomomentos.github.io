@@ -2,17 +2,13 @@
 <html lang="es">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>{% block title %}{% endblock %} </title>
     {% load static %}
     <!-- Estilos y fuentes del template  -->
-    <link href="{% static 'core/css/css.css' %}" rel="stylesheet">
-    
-    <link href="{% static 'core/css/css.css' %}" rel="stylesheet">
-
+    <link href="{% static 'core/css/style2.css' %}" rel="stylesheet">
   </head>
 
   <body>
@@ -20,33 +16,35 @@
     <!-- Navegación -->
     <header class="header">
       <div class="navbar">
-          <a href="index.html"><img src="core/imagenes/Turismo.png" alt="Logo de la Empresa" class="navbar__logo"></a>
-          <a href="#menu" class="navbar__menu">
-              <img class="navbar__icon" src="core/imagenes/menu.png">
-          </a>
-          <a href="#" class="navbar__menu navbar__menu--second">
-              <img class="navbar__icon" src="/imagenes/cancelar.png">
-          </a>
+           <a href="{% url 'index' %}"><img src="{% static 'core/imagenes/Turismo.png' %}" alt="Logo de la Empresa" class="navbar__logo"></a>
+            <a href="#menu" class="navbar__menu">
+                <img class="navbar__icon" src="{% static 'core/imagenes/menu.png' %}">
+            </a>
+            <a href="#" class="navbar__menu navbar__menu--second">
+                <img class="navbar__icon" src="{% static 'core/imagenes/cancelar.png' %}">
+            </a>
           <ul class="navbar__group" id="menu">
+             
+              {% if user.is_authenticated %}<!--es un objeto global que crea django -->
+
+              <li class="navbar__list">
+                  <a class="navbar__link" href="{% url 'cerrar_sesion' %}">Cerrar Sesion</a></li>
+              {% else %}
               <li class="navbar__list">
                   <a class="navbar__link" href="{% url 'index'%}">Inicio</a>
               </li>
               <li class="navbar__list">
+                  <a class="navbar__link" href="{% url 'usuarios' %}">Usuarios</a>
+              </li>
+              {% endif %}
+               <li class="navbar__list">
                   <a class="navbar__link" href="{% url 'acercaDe'%}">Acerca de</a>
               </li>
               <li class="navbar__list">
                   <a class="navbar__link" href="{% url 'contacto'%}">Contacto</a>
               </li>
-              <li class="navbar__list">
-                  <a class="navbar__link" href="{% url 'preguntas_frecuentes'%}">Preguntas Frecuentes</a>
-              </li>
-              <li class="navbar__list">
-                  <a class="navbar__link" href="{% url 'usuarios' %}">Usuarios</a>
-              </li>
-              <li class="navbar__list">
-                  <a class="navbar__link" href="{% url 'formulario' %}">Formulario</a>
-              </li>
-          </ul>
+
+            </ul>
       </div>
     </header>
     <!-- Cabecera -->
@@ -65,40 +63,44 @@
       {% block content %}
       <div class="container">
         <div class="row">
+          <!-- Contenido adicional se puede añadir aquí -->
           
         </div>
+        
       </div>
-      {% endblock %}
+      {% endblock content%}
+      {% block aside %}
+      {% endblock aside%}
+      {% if request.path != '/'%}
+      <hr>
+      {% endif %}
 
-      {% if request.path != '/'%}<hr>{% endif %}
-    <!-- Pié de página -->
+       <!-- Pié de página -->
     <footer class="footer">
-      <div class="socialMedia">
-          <p class="socialMedia__text">Me puedes encontrar en:</p>
-          <a class="socialMedia__link" href="https://www.facebook.com/?locale=es_LA" target="_blank">
-              <img class="socialMedia__img" src="./imagenes/facebook.png" alt="Logo Facebook">
-          </a>
-          <a class="socialMedia__link" href="https://www.instagram.com/" target="_blank">
-              <img class="socialMedia__img" src="./imagenes/instagram.png" alt="Logo Facebook">
-          </a>
-          <a class="socialMedia__link" href="https://github.com" target="_blank">
-              <img class="socialMedia__img" src="./imagenes/github.png" alt="Logo Github">
-          </a>
-          <a class="socialMedia__link" href="https://www.linkedin.com" target="_blank">
-              <img class="socialMedia__img" src="./imagenes/linkedin.png" alt="Logo Linkekin">
-          </a>
-      </div>
-      <p class="footer__text">
-          © 2024 Todos los derechos reservados | Sitio desarrollado por: Equipo de
-          desarrollo
-      </p>
-  </footer> 
+        <div class="socialMedia">
+            <p class="socialMedia__text">Me puedes encontrar en:</p>
+            <a class="socialMedia__link" href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                <img class="socialMedia__img" src="{% static 'core/imagenes/facebook.png' %}" alt="Logo Facebook">
+            </a>
+            <a class="socialMedia__link" href="https://www.instagram.com/" target="_blank">
+                <img class="socialMedia__img" src="{% static 'core/imagenes/instagram.png' %}" alt="Logo Instagram">
+            </a>
+            <a class="socialMedia__link" href="https://github.com" target="_blank">
+                <img class="socialMedia__img" src="{% static 'core/imagenes/github.png' %}" alt="Logo Github">
+            </a>
+            <a class="socialMedia__link" href="https://www.linkedin.com" target="_blank">
+                <img class="socialMedia__img" src="{% static 'core/imagenes/linkedin.png' %}" alt="Logo LinkedIn">
+            </a>
+        </div>
+        <p class="footer__text">
+            © 2024 Todos los derechos reservados | Sitio desarrollado por: Equipo de desarrollo
+        </p>
+    </footer>
 
     <!-- Bootstrap y Javascripts -->
-    <script src="{% static 'core/vendor/jquery/jquery.min.js'%}"></script>
-    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
-    <script src="{% static 'core/js/clean-blog.min.js'%}"></script>
-
+    <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'core/js/clean-blog.min.js' %}"></script>
   </body>
 
 </html>
